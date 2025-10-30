@@ -1,0 +1,33 @@
+1. PUT is one of the CRUD operations used to update data 
+    while 
+POST is a CRUD operation used to add given data.
+
+2.Why validating user inputs before saving data to the database is important,
+    It is a form of security to prevent attacks
+    It also ensures that the specified data meets the right constraints 
+    It currents application stability since corrupted and irrelevant data is not sent to the database
+
+3.HTTP STatus Codes
+    200: This indicates that a particular request by the user was completed successfully.
+
+    201: This indicates that a particular request by the user was completed successfully with a new data set created.
+
+    400: This indicates that the server cannot process the users request.
+
+    404: This indicates that the server cannot retrieve the required data that has been submitted by the user since 
+    it does not correspond to any data set in the database 
+
+    500:This is mainly an internal sever error, meaning that the server cannot retrieve any data due to an error
+    in the database.
+
+4.When one forgets to include a WHERE clause in an UPDATE statement,
+    When this happens, all the data being updated will be applied to all users in the database.
+    For example if we were update ages of users, maybe user=1 from 21 years to 22 in the database and we did not specify the user id to 1, in this case,
+    all the ages of the users in the database will be affected and changed to 22.
+
+5. Causes of a 500 Internal Server Error in your API
+    Loss of connection between our SQLdatabase sever and the MySQL server.
+    An error in the syntax of the request the user is trying to request from the server.
+    Database constraint violations where a user is trying to insert specific data that violates table constraints
+    An unexpected error within the user's code that might cause the server to crash outside of the database, maybe a certain
+    block of code.
